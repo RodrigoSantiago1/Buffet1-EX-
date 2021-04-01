@@ -120,6 +120,14 @@
         <Compile Include="Global.asax.cs">
             <DependentUpon>Global.asax</DependentUpon>
         </Compile>
+        <Compile Include="Models\Cliente\ClienteEntity.cs" />
+        <Compile Include="Models\Convidado\Convidado.cs" />
+        <Compile Include="Models\Evento\EventoEntity.cs" />
+        <Compile Include="Models\Local\Local.cs" />
+        <Compile Include="Models\Situacao\SituacaoConvidado.cs" />
+        <Compile Include="Models\Situacao\SituacaoEvento.cs" />
+        <Compile Include="Models\Tipos\TipoCliente.cs" />
+        <Compile Include="Models\Tipos\TipoEvento.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
@@ -170,7 +178,6 @@
     </ItemGroup>
     <ItemGroup>
         <Folder Include="App_Data" />
-        <Folder Include="Models" />
     </ItemGroup>
     <ItemGroup>
         <Content Include="fonts\glyphicons-halflings-regular.woff2" />
