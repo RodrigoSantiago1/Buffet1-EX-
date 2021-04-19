@@ -1,4 +1,4 @@
-﻿
+﻿@model Buffet1.Views.Cadastro.CadastrarViewModel;
 
 <!DOCTYPE html>
 
@@ -7,8 +7,41 @@
     <title>title</title>
 </head>
 <body>
-<div>
-    <h2>Cadastro</h2> 
+
+<header>
+    <h1>Cadastrar</h1>
+</header>
+
+<div class="row">
+
+    <div class="col-6 offset-3"></div>
+    
+    @if (Model.msg != null)
+    {
+        <p>@Model.msg</p>
+    }
+    
+    <form action="/Home/Cadastro" method="post">
+
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" id="nome" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="confirm">Confirmaçao</label>
+            <input type="password" id="confirm" name="confirm">
+        </div>
+
+        <input type="submit" value="confirmar" class="btn-group">
+
+
+    </form>
 </div>
 </body>
 </html>
